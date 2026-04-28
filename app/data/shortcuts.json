@@ -1,0 +1,1397 @@
+{
+  "vscode": [
+    {
+      "id": 1,
+      "action": "Open File",
+      "keys": [
+        "Control",
+        "P"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "action": "Command Palette",
+      "keys": [
+        "Control",
+        "Shift",
+        "P"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "action": "Toggle Sidebar",
+      "keys": [
+        "Control",
+        "B"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "action": "Quick Open Recent",
+      "keys": [
+        "Control",
+        "R"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "action": "Save File",
+      "keys": [
+        "Control",
+        "S"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "action": "Save All",
+      "keys": [
+        "Control",
+        "K",
+        "S"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "action": "Close File",
+      "keys": [
+        "Control",
+        "W"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "action": "Reopen Closed Editor",
+      "keys": [
+        "Control",
+        "Shift",
+        "T"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "action": "New Window",
+      "keys": [
+        "Control",
+        "Shift",
+        "N"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "action": "Split Editor",
+      "keys": [
+        "Control",
+        "\\"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 11,
+      "action": "New Terminal",
+      "keys": [
+        "Control",
+        "Shift",
+        "`"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "action": "Toggle Terminal",
+      "keys": [
+        "Control",
+        "`"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "action": "Run Task",
+      "keys": [
+        "Control",
+        "Shift",
+        "B"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "action": "Debug Start",
+      "keys": [
+        "F5"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "action": "Debug Stop",
+      "keys": [
+        "Shift",
+        "F5"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 16,
+      "action": "Step Over",
+      "keys": [
+        "F10"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 17,
+      "action": "Step Into",
+      "keys": [
+        "F11"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 18,
+      "action": "Find",
+      "keys": [
+        "Control",
+        "F"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 19,
+      "action": "Replace",
+      "keys": [
+        "Control",
+        "H"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "action": "Find in Files",
+      "keys": [
+        "Control",
+        "Shift",
+        "F"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 21,
+      "action": "Replace in Files",
+      "keys": [
+        "Control",
+        "Shift",
+        "H"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "action": "Go to Line",
+      "keys": [
+        "Control",
+        "G"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 23,
+      "action": "Go to Symbol",
+      "keys": [
+        "Control",
+        "Shift",
+        "O"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 24,
+      "action": "Copy Line Down",
+      "keys": [
+        "Shift",
+        "Alt",
+        "ArrowDown"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 25,
+      "action": "Copy Line Up",
+      "keys": [
+        "Shift",
+        "Alt",
+        "ArrowUp"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 26,
+      "action": "Move Line Down",
+      "keys": [
+        "Alt",
+        "ArrowDown"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 27,
+      "action": "Move Line Up",
+      "keys": [
+        "Alt",
+        "ArrowUp"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 28,
+      "action": "Delete Line",
+      "keys": [
+        "Control",
+        "Shift",
+        "K"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 29,
+      "action": "Insert Line Below",
+      "keys": [
+        "Control",
+        "Enter"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 30,
+      "action": "Insert Line Above",
+      "keys": [
+        "Control",
+        "Shift",
+        "Enter"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 31,
+      "action": "Toggle Comment",
+      "keys": [
+        "Control",
+        "/"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 32,
+      "action": "Block Comment",
+      "keys": [
+        "Shift",
+        "Alt",
+        "A"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 33,
+      "action": "Format Document",
+      "keys": [
+        "Shift",
+        "Alt",
+        "F"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 34,
+      "action": "Rename Symbol",
+      "keys": [
+        "F2"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 35,
+      "action": "Trigger Suggestion",
+      "keys": [
+        "Control",
+        "Space"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 36,
+      "action": "Multi Cursor Add",
+      "keys": [
+        "Alt",
+        "Click"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 37,
+      "action": "Add Cursor Above",
+      "keys": [
+        "Control",
+        "Alt",
+        "ArrowUp"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 38,
+      "action": "Add Cursor Below",
+      "keys": [
+        "Control",
+        "Alt",
+        "ArrowDown"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 39,
+      "action": "Select Next Match",
+      "keys": [
+        "Control",
+        "D"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 40,
+      "action": "Select All Matches",
+      "keys": [
+        "Control",
+        "Shift",
+        "L"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 41,
+      "action": "Fold Region",
+      "keys": [
+        "Control",
+        "Shift",
+        "["
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 42,
+      "action": "Unfold Region",
+      "keys": [
+        "Control",
+        "Shift",
+        "]"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 43,
+      "action": "Fold All",
+      "keys": [
+        "Control",
+        "K",
+        "0"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 44,
+      "action": "Unfold All",
+      "keys": [
+        "Control",
+        "K",
+        "J"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 45,
+      "action": "Zen Mode",
+      "keys": [
+        "Control",
+        "K",
+        "Z"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 46,
+      "action": "Toggle Full Screen",
+      "keys": [
+        "F11"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 47,
+      "action": "Open Settings",
+      "keys": [
+        "Control",
+        ","
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 48,
+      "action": "Keyboard Shortcuts",
+      "keys": [
+        "Control",
+        "K",
+        "Control",
+        "S"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 49,
+      "action": "Show Explorer",
+      "keys": [
+        "Control",
+        "Shift",
+        "E"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 50,
+      "action": "Show Source Control",
+      "keys": [
+        "Control",
+        "Shift",
+        "G"
+      ],
+      "difficulty": "medium"
+    }
+  ],
+  "figma": [
+    {
+      "id": 1,
+      "action": "Move Tool",
+      "keys": [
+        "V"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "action": "Frame Tool",
+      "keys": [
+        "F"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "action": "Rectangle Tool",
+      "keys": [
+        "R"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "action": "Ellipse Tool",
+      "keys": [
+        "O"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "action": "Text Tool",
+      "keys": [
+        "T"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "action": "Pen Tool",
+      "keys": [
+        "P"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "action": "Hand Tool",
+      "keys": [
+        "H"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "action": "Comment Tool",
+      "keys": [
+        "C"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "action": "Duplicate Selection",
+      "keys": [
+        "Control",
+        "D"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "action": "Undo",
+      "keys": [
+        "Control",
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "action": "Redo",
+      "keys": [
+        "Control",
+        "Shift",
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 12,
+      "action": "Group Selection",
+      "keys": [
+        "Control",
+        "G"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "action": "Ungroup Selection",
+      "keys": [
+        "Control",
+        "Shift",
+        "G"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "action": "Bring Forward",
+      "keys": [
+        "Control",
+        "]"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 15,
+      "action": "Send Backward",
+      "keys": [
+        "Control",
+        "["
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 16,
+      "action": "Bring to Front",
+      "keys": [
+        "Control",
+        "Shift",
+        "]"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 17,
+      "action": "Send to Back",
+      "keys": [
+        "Control",
+        "Shift",
+        "["
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 18,
+      "action": "Copy",
+      "keys": [
+        "Control",
+        "C"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 19,
+      "action": "Paste",
+      "keys": [
+        "Control",
+        "V"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "action": "Paste Over Selection",
+      "keys": [
+        "Control",
+        "Shift",
+        "V"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 21,
+      "action": "Zoom In",
+      "keys": [
+        "Control",
+        "+"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 22,
+      "action": "Zoom Out",
+      "keys": [
+        "Control",
+        "-"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 23,
+      "action": "Zoom to Fit",
+      "keys": [
+        "Shift",
+        "1"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 24,
+      "action": "Zoom to Selection",
+      "keys": [
+        "Shift",
+        "2"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 25,
+      "action": "Pixel Preview",
+      "keys": [
+        "Control",
+        "'"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 26,
+      "action": "Show Rulers",
+      "keys": [
+        "Shift",
+        "R"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 27,
+      "action": "Toggle UI",
+      "keys": [
+        "Control",
+        "\\"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 28,
+      "action": "Align Left",
+      "keys": [
+        "Alt",
+        "A"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 29,
+      "action": "Align Horizontal Center",
+      "keys": [
+        "Alt",
+        "H"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 30,
+      "action": "Align Right",
+      "keys": [
+        "Alt",
+        "D"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 31,
+      "action": "Align Top",
+      "keys": [
+        "Alt",
+        "W"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 32,
+      "action": "Align Vertical Center",
+      "keys": [
+        "Alt",
+        "V"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 33,
+      "action": "Align Bottom",
+      "keys": [
+        "Alt",
+        "S"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 34,
+      "action": "Create Component",
+      "keys": [
+        "Control",
+        "Alt",
+        "K"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 35,
+      "action": "Detach Instance",
+      "keys": [
+        "Control",
+        "Alt",
+        "B"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 36,
+      "action": "Flatten Selection",
+      "keys": [
+        "Control",
+        "E"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 37,
+      "action": "Boolean Union",
+      "keys": [
+        "Control",
+        "Alt",
+        "U"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 38,
+      "action": "Boolean Subtract",
+      "keys": [
+        "Control",
+        "Alt",
+        "S"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 39,
+      "action": "Boolean Intersect",
+      "keys": [
+        "Control",
+        "Alt",
+        "I"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 40,
+      "action": "Boolean Exclude",
+      "keys": [
+        "Control",
+        "Alt",
+        "X"
+      ],
+      "difficulty": "hard"
+    }
+  ],
+  "notion": [
+    {
+      "id": 1,
+      "action": "Search",
+      "keys": [
+        "Control",
+        "P"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "action": "New Page",
+      "keys": [
+        "Control",
+        "N"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "action": "Open New Window",
+      "keys": [
+        "Control",
+        "Shift",
+        "N"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "action": "Bold Text",
+      "keys": [
+        "Control",
+        "B"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "action": "Italic Text",
+      "keys": [
+        "Control",
+        "I"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "action": "Underline Text",
+      "keys": [
+        "Control",
+        "U"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "action": "Link Text",
+      "keys": [
+        "Control",
+        "K"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "action": "Undo",
+      "keys": [
+        "Control",
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "action": "Redo",
+      "keys": [
+        "Control",
+        "Shift",
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "action": "Duplicate Block",
+      "keys": [
+        "Control",
+        "D"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "action": "Move Block Up",
+      "keys": [
+        "Control",
+        "Shift",
+        "ArrowUp"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "action": "Move Block Down",
+      "keys": [
+        "Control",
+        "Shift",
+        "ArrowDown"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 13,
+      "action": "Open Link in New Tab",
+      "keys": [
+        "Control",
+        "Enter"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "action": "Toggle Dark Mode",
+      "keys": [
+        "Control",
+        "Shift",
+        "L"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 15,
+      "action": "Expand Sidebar",
+      "keys": [
+        "Control",
+        "\\"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 16,
+      "action": "Comment",
+      "keys": [
+        "Control",
+        "Shift",
+        "M"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 17,
+      "action": "Heading 1",
+      "keys": [
+        "Control",
+        "Alt",
+        "1"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 18,
+      "action": "Heading 2",
+      "keys": [
+        "Control",
+        "Alt",
+        "2"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 19,
+      "action": "Heading 3",
+      "keys": [
+        "Control",
+        "Alt",
+        "3"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 20,
+      "action": "To-do List",
+      "keys": [
+        "Control",
+        "Shift",
+        "7"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 21,
+      "action": "Toggle List",
+      "keys": [
+        "Control",
+        "Shift",
+        "9"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "action": "Bullet List",
+      "keys": [
+        "Control",
+        "Shift",
+        "8"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 23,
+      "action": "Code Block",
+      "keys": [
+        "Control",
+        "Alt",
+        "C"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 24,
+      "action": "Create Template Button",
+      "keys": [
+        "Control",
+        "Alt",
+        "T"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 25,
+      "action": "Turn Into Page",
+      "keys": [
+        "Control",
+        "Alt",
+        "P"
+      ],
+      "difficulty": "hard"
+    }
+  ],
+  "photoshop": [
+    {
+      "id": 1,
+      "action": "Move Tool",
+      "keys": [
+        "V"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "action": "Brush Tool",
+      "keys": [
+        "B"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "action": "Eraser Tool",
+      "keys": [
+        "E"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "action": "Text Tool",
+      "keys": [
+        "T"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "action": "Crop Tool",
+      "keys": [
+        "C"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "action": "Lasso Tool",
+      "keys": [
+        "L"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "action": "Magic Wand Tool",
+      "keys": [
+        "W"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "action": "Zoom Tool",
+      "keys": [
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "action": "Hand Tool",
+      "keys": [
+        "H"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "action": "Undo",
+      "keys": [
+        "Control",
+        "Z"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "action": "Step Backward",
+      "keys": [
+        "Control",
+        "Alt",
+        "Z"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "action": "Save",
+      "keys": [
+        "Control",
+        "S"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "action": "Open File",
+      "keys": [
+        "Control",
+        "O"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 14,
+      "action": "New File",
+      "keys": [
+        "Control",
+        "N"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "action": "Close File",
+      "keys": [
+        "Control",
+        "W"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 16,
+      "action": "Duplicate Layer",
+      "keys": [
+        "Control",
+        "J"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 17,
+      "action": "Merge Layers",
+      "keys": [
+        "Control",
+        "E"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 18,
+      "action": "Free Transform",
+      "keys": [
+        "Control",
+        "T"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 19,
+      "action": "Deselect",
+      "keys": [
+        "Control",
+        "D"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "action": "Inverse Selection",
+      "keys": [
+        "Control",
+        "Shift",
+        "I"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 21,
+      "action": "Levels",
+      "keys": [
+        "Control",
+        "L"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "action": "Curves",
+      "keys": [
+        "Control",
+        "M"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 23,
+      "action": "Hue Saturation",
+      "keys": [
+        "Control",
+        "U"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 24,
+      "action": "Color Balance",
+      "keys": [
+        "Control",
+        "B"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 25,
+      "action": "Select All",
+      "keys": [
+        "Control",
+        "A"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 26,
+      "action": "Copy",
+      "keys": [
+        "Control",
+        "C"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 27,
+      "action": "Paste",
+      "keys": [
+        "Control",
+        "V"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 28,
+      "action": "New Layer",
+      "keys": [
+        "Control",
+        "Shift",
+        "N"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 29,
+      "action": "Fill",
+      "keys": [
+        "Shift",
+        "F5"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 30,
+      "action": "Content Aware Fill",
+      "keys": [
+        "Shift",
+        "Backspace"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 31,
+      "action": "Toggle Guides",
+      "keys": [
+        "Control",
+        ";"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 32,
+      "action": "Snap",
+      "keys": [
+        "Control",
+        "Shift",
+        ";"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 33,
+      "action": "Liquify",
+      "keys": [
+        "Control",
+        "Shift",
+        "X"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 34,
+      "action": "Camera Raw Filter",
+      "keys": [
+        "Control",
+        "Shift",
+        "A"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 35,
+      "action": "Hide Extras",
+      "keys": [
+        "Control",
+        "H"
+      ],
+      "difficulty": "hard"
+    }
+  ]
+}
