@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="p-2 bg-blue-600 rounded-lg group-hover:scale-110 transition-transform">
                     <MdOutlineKeyboard size={20} className="text-white" />
                 </div>
-                <h1 className="text-xl font-black tracking-tight">Shortcuts <span className="text-blue-600">Trainer</span></h1>
+                <h1 className="text-xl font-black tracking-tight">Key<span className="text-blue-600">Sprint</span></h1>
             </Link>
 
             <div className="hidden md:flex items-center gap-6">
@@ -37,8 +37,8 @@ const Navbar = () => {
                         <Link
                             href="/pages/dashboard"
                             className={`flex items-center gap-2 text-sm font-bold transition-all px-4 py-2 rounded-xl cursor-pointer ${isActive('/pages/dashboard')
-                                    ? 'text-blue-600 bg-blue-50 border border-blue-100 shadow-sm'
-                                    : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50'
+                                ? 'text-blue-600 bg-blue-50 border border-blue-100 shadow-sm'
+                                : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50'
                                 }`}
                         >
                             <FiLayout size={16} />
@@ -47,8 +47,8 @@ const Navbar = () => {
                         <Link
                             href="/pages/progress"
                             className={`flex items-center gap-2 text-sm font-bold transition-all px-4 py-2 rounded-xl cursor-pointer ${isActive('/pages/progress')
-                                    ? 'text-blue-600 bg-blue-50 border border-blue-100 shadow-sm'
-                                    : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50'
+                                ? 'text-blue-600 bg-blue-50 border border-blue-100 shadow-sm'
+                                : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50'
                                 }`}
                         >
                             <FiBarChart2 size={16} />
@@ -100,8 +100,8 @@ const Navbar = () => {
                                 href="/pages/dashboard"
                                 onClick={() => setIsMenuOpen(false)}
                                 className={`flex items-center gap-3 p-4 rounded-xl font-bold transition-all ${isActive('/pages/dashboard')
-                                        ? 'text-blue-600 bg-blue-50 border border-blue-100'
-                                        : 'text-zinc-500 hover:bg-zinc-50'
+                                    ? 'text-blue-600 bg-blue-50 border border-blue-100'
+                                    : 'text-zinc-500 hover:bg-zinc-50'
                                     }`}
                             >
                                 <FiLayout size={18} />
@@ -111,8 +111,8 @@ const Navbar = () => {
                                 href="/pages/progress"
                                 onClick={() => setIsMenuOpen(false)}
                                 className={`flex items-center gap-3 p-4 rounded-xl font-bold transition-all ${isActive('/pages/progress')
-                                        ? 'text-blue-600 bg-blue-50 border border-blue-100'
-                                        : 'text-zinc-500 hover:bg-zinc-50'
+                                    ? 'text-blue-600 bg-blue-50 border border-blue-100'
+                                    : 'text-zinc-500 hover:bg-zinc-50'
                                     }`}
                             >
                                 <FiBarChart2 size={18} />

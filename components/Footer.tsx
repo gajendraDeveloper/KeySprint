@@ -15,7 +15,7 @@ const Footer = () => {
                             <div className="p-2 bg-zinc-100 rounded-lg">
                                 <MdOutlineKeyboard size={20} className="text-zinc-900" />
                             </div>
-                            <h2 className="text-2xl font-black text-zinc-900">Shortcuts <span className="text-blue-600">Trainer</span></h2>
+                            <h2 className="text-2xl font-black text-zinc-900">Key<span className="text-blue-600">Sprint</span></h2>
                         </Link>
 
                     </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-4 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-zinc-400 text-sm">© 2026 Shortcuts Trainer. All rights reserved.</p>
+                    <p className="text-zinc-400 text-sm">© 2026 KeySprint. All rights reserved.</p>
                     <div >
                         Made with <span title="love" className="animate-pulse">❤️</span> by <span className="text-[#c7a97c] font-medium">Gajendra Rathore</span>
                     </div>
