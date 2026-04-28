@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
     FiClock,
@@ -24,7 +24,7 @@ import GameHUD from './components/GameHUD';
 import KeyboardVisualizer from './components/KeyboardVisualizer';
 import ResultsModal from './components/ResultsModal';
 
-export default function GameScreen() {
+function GameScreenContent() {
     const router = useRouter();
     const { user } = useAuth();
     const searchParams = useSearchParams();
@@ -356,5 +356,13 @@ export default function GameScreen() {
                 />
             </div>
         </ProtectedRoute>
+    );
+}
+
+export default function GameScreen() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-zinc-50 flex items-center justify-center text-zinc-900">Loading game...</div>}>
+            <GameScreenContent />
+        </Suspense>
     );
 }
