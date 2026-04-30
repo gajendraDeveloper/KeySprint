@@ -9,15 +9,10 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({ isLoggedIn: false, user: null }, { status: 200 });
     }
 
-    // Decode token (simple base64)
     try {
         const decoded = Buffer.from(token, 'base64').toString('utf-8');
         const [userId] = decoded.split('-');
 
-        // In a real app, verify token properly, perhaps with JWT
-        // For demo, assume valid if exists
-
-        // Get user from data (simplified)
         const USERS_FILE = path.join(process.cwd(), 'app', 'data', 'users.json');
         let users = [];
         if (fs.existsSync(USERS_FILE)) {

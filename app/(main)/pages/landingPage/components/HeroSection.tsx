@@ -31,7 +31,7 @@ export default function Hero() {
 
                     {/* Buttons */}
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <Link href="/auth/sign-in" className="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition">
+                        <Link href="/auth/signUp" className="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition">
                             Start Practicing
                         </Link>
 

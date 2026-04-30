@@ -53,7 +53,6 @@ export default function Dashboard() {
                 const totalAccuracy = data.sessions.reduce((acc: number, s: any) => acc + s.accuracy, 0);
                 const totalAvgTime = data.sessions.reduce((acc: number, s: any) => acc + s.avgTime, 0);
 
-                // Calculate unique mastered shortcuts across all tools
                 let uniqueMasteredCount = 0;
                 if (data.masteredShortcuts) {
                     uniqueMasteredCount = Object.values(data.masteredShortcuts)
@@ -73,7 +72,6 @@ export default function Dashboard() {
 
     const handleStartTest = async () => {
         if (selectedTool) {
-            // Attempt to trigger fullscreen on the dashboard click gesture
             try {
                 if (document.documentElement.requestFullscreen) {
                     await document.documentElement.requestFullscreen();
@@ -89,15 +87,13 @@ export default function Dashboard() {
         <ProtectedRoute>
             <div className="flex-1 bg-zinc-50 text-zinc-900 p-6 md:p-10">
                 <div className="max-w-7xl mx-auto space-y-10">
-                    {/* Header */}
                     <div className="flex flex-col gap-2">
                         <h1 className="text-3xl font-bold tracking-tight text-zinc-900">
-                            Welcome back, <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">{user?.username || 'Trainer'}!</span>
+                            Welcome, <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent capitalize">{user?.username || 'Trainer'}!</span>
                         </h1>
                         <p className="text-zinc-500">Track your performance and start a new practice session.</p>
                     </div>
 
-                    {/* KPIs */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <CommonKpi
                             label="STREAK"
@@ -137,7 +133,6 @@ export default function Dashboard() {
                         />
                     </div>
 
-                    {/* Tool Selection */}
                     <div className="space-y-6">
                         <div className="flex items-center justify-between">
                             <h2 className="text-xl font-semibold text-zinc-900">Choose Your Tool</h2>
@@ -167,7 +162,6 @@ export default function Dashboard() {
                         </div>
                     </div>
 
-                    {/* Difficulty & Start */}
                     <div className="bg-white border border-zinc-200 rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-sm">
                         <div className="space-y-4 w-full lg:w-auto">
                             <h3 className="text-lg font-medium text-zinc-900">Select Difficulty</h3>

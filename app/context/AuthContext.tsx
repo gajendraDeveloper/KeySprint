@@ -21,7 +21,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [user, setUser] = useState<User | null>(null);
 
-    // Check auth status on mount
     useEffect(() => {
         const checkAuth = async () => {
             try {
@@ -38,9 +37,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
     const login = (username: string) => {
-        // Note: login is now handled by the API, this is just for optimistic UI
-        // The actual login sets the cookie, and we can refetch status
-        // But for now, since we don't have user data here, we'll refetch
         const checkAuth = async () => {
             try {
                 const response = await fetch('/api/auth/status');
@@ -56,7 +52,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const logout = async () => {
         try {
-            // Call logout API to clear cookie
             await fetch('/api/auth/logout', { method: 'POST' });
             setIsLoggedIn(false);
             setUser(null);

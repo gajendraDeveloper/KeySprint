@@ -20,7 +20,6 @@ import MasteryChart from './charts/MasteryChart';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import CommonKpi from '@/components/commonUI/CommonKpi';
 
-// Helper to get day name
 const getDayName = (dateStr: string) => {
     const date = new Date(dateStr);
     return date.toLocaleDateString('en-US', { weekday: 'short' });
@@ -38,7 +37,6 @@ export default function ProgressPage() {
             const data = JSON.parse(localStorage.getItem(storageKey) || '{"sessions": [], "streak": 0}');
 
             if (data.sessions.length > 0) {
-                // 1. Generate the last 7 calendar days
                 const last7Days: any[] = [];
                 for (let i = 6; i >= 0; i--) {
                     const d = new Date();
@@ -51,7 +49,6 @@ export default function ProgressPage() {
                     });
                 }
 
-                // 2. Group existing sessions into these days
                 data.sessions.forEach((s: any) => {
                     const sDateStr = s.date.split('T')[0];
                     const dayObj = last7Days.find(d => d.dateStr === sDateStr);
@@ -60,7 +57,6 @@ export default function ProgressPage() {
                     }
                 });
 
-                // 3. Process chart data (Averaging multiple sessions per day)
                 const chartData = last7Days.map((d, idx) => {
                     if (d.sessions.length > 0) {
                         const totalAcc = d.sessions.reduce((acc: number, s: any) => acc + s.accuracy, 0);
@@ -81,7 +77,6 @@ export default function ProgressPage() {
                 });
                 setAccuracyData(chartData);
 
-                // 4. Process mastery data (Overall remains the same)
                 const toolStats: Record<string, { learned: number, total: number }> = {};
                 Object.keys(shortcutsData).forEach(toolId => {
                     toolStats[toolId] = { 
@@ -96,7 +91,6 @@ export default function ProgressPage() {
                     total: info.total
                 })));
 
-                // 5. Calculate KPIs based on this 7-day period
                 const activeDays = chartData.filter(d => d.accuracy > 0);
                 const periodAccuracy = activeDays.length > 0 
                     ? activeDays.reduce((acc, d) => acc + d.accuracy, 0) / activeDays.length
@@ -111,7 +105,6 @@ export default function ProgressPage() {
                         .reduce((acc: number, ids: any) => acc + (ids?.length || 0), 0);
                 }
 
-                // Improvement: Compare last active day vs first active day in period
                 let periodImprovement = 0;
                 if (activeDays.length > 1) {
                     periodImprovement = activeDays[activeDays.length - 1].accuracy - activeDays[0].accuracy;
@@ -149,7 +142,6 @@ export default function ProgressPage() {
         <ProtectedRoute>
             <div className="flex-1 bg-zinc-50 text-zinc-900 p-6 md:p-10">
                 <div className="max-w-7xl mx-auto space-y-10">
-                    {/* Header */}
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div className="space-y-1">
                             <h1 className="text-3xl font-bold text-zinc-900">Your Progress</h1>
@@ -163,7 +155,6 @@ export default function ProgressPage() {
                         </div>
                     </div>
 
-                    {/* KPI Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <CommonKpi
                             label="PERIOD ACCURACY"
@@ -203,13 +194,11 @@ export default function ProgressPage() {
                         />
                     </div>
 
-                    {/* Charts Grid */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <AccuracyChart data={accuracyData} improvement={stats.improvement} />
                         <SpeedChart data={accuracyData} />
                     </div>
 
-                    {/* Mastery */}
                     <MasteryChart data={categoryData} />
                 </div>
             </div>

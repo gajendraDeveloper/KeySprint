@@ -30,7 +30,11 @@ const SignInPage = () => {
     }, [isLoggedIn, router]);
 
     const { register, handleSubmit, formState: { errors } } = useForm({
-        resolver: yupResolver(signInSchema)
+        resolver: yupResolver(signInSchema),
+        defaultValues: {
+            email: "",
+            password: ""
+        }
     })
 
     const onSubmit = async (data: any) => {
@@ -46,7 +50,7 @@ const SignInPage = () => {
             const result = await res.json();
 
             if (res.ok) {
-                login(result.user.username); // Update global context
+                login(result.user.username);
                 router.push('/pages/dashboard');
             } else {
                 setAuthError(result.message || 'Invalid credentials');
@@ -59,27 +63,9 @@ const SignInPage = () => {
     }
 
     return (
-        <div className="flex-1 bg-zinc-50 flex items-center justify-center p-6 min-h-[80vh]">
-            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 bg-white rounded-[2.5rem] overflow-hidden border border-zinc-200 shadow-2xl">
-                {/* Left Side: Visual */}
-                <div className="hidden md:flex flex-col items-center justify-center p-12 bg-blue-600 text-white relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-full opacity-10">
-                        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-white rounded-full blur-[100px]" />
-                    </div>
-
-                    <div className="relative z-10 text-center space-y-6">
-                        <div className="w-20 h-20 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl flex items-center justify-center mx-auto mb-8">
-                            <MdOutlineKeyboard size={40} />
-                        </div>
-                        <h2 className="text-4xl font-black">Welcome Back!</h2>
-                        <p className="text-blue-100 max-w-xs mx-auto">
-                            Sign in to continue your shortcut mastery journey and track your progress.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Right Side: Form */}
-                <div className="p-10 md:p-16 flex flex-col justify-center space-y-10">
+        <div className="min-h-screen bg-[url('/log-in.jpg')] bg-cover bg-center flex items-center justify-center p-2">
+            <div className="w-full max-w-md bg-white/90 backdrop-blur-xl rounded-[2.5rem] overflow-hidden border border-white/20 shadow-2xl">
+                <div className="p-8 md:p-8 flex flex-col justify-center space-y-2">
                     <div className="space-y-2">
                         <h1 className="text-3xl font-bold text-zinc-900">Sign In</h1>
                         <p className="text-zinc-500">Enter your credentials to access your account</p>

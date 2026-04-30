@@ -16,15 +16,15 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const handleLogout = () => {
+        router.push('/');
         logout();
-        router.push('/pages/landingPage');
     };
 
     const isActive = (path: string) => pathname === path;
 
     return (
         <nav className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-white/80 backdrop-blur-md border-b border-zinc-200 text-zinc-900">
-            <Link href={isLoggedIn ? "/pages/dashboard" : "/pages/landingPage"} className="flex items-center gap-2 group cursor-pointer">
+            <Link href={isLoggedIn ? "/pages/dashboard" : "/"} className="flex items-center gap-2 group cursor-pointer">
                 <div className="p-2 bg-blue-600 rounded-lg group-hover:scale-110 transition-transform">
                     <MdOutlineKeyboard size={20} className="text-white" />
                 </div>
@@ -81,7 +81,6 @@ const Navbar = () => {
                 )}
             </div>
 
-            {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center">
                 <button
                     onClick={toggleMenu}
@@ -91,7 +90,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu Overlay */}
             {isMenuOpen && (
                 <div className="absolute top-full left-0 w-full bg-white border-b border-zinc-200 p-6 flex flex-col gap-4 md:hidden animate-in slide-in-from-top-2 duration-200 z-50 shadow-xl">
                     {isLoggedIn ? (

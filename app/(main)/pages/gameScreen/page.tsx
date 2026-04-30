@@ -31,7 +31,6 @@ function GameScreenContent() {
     const tool = (searchParams.get('tool') || 'vscode') as keyof typeof shortcutsData;
     const difficulty = searchParams.get('difficulty') || 'medium';
 
-    // Game state
     const [shortcuts, setShortcuts] = useState<any[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [pressedKeys, setPressedKeys] = useState<Set<string>>(new Set());
@@ -72,13 +71,11 @@ function GameScreenContent() {
         setStartTime(Date.now());
     }, [tool, difficulty]);
 
-    // Initialize game
     useEffect(() => {
         if (!hasStarted) return;
         initGame();
     }, [hasStarted, initGame]);
 
-    // Handle Fullscreen
     useEffect(() => {
         const handleFullscreenChange = () => {
             setIsFullscreen(!!document.fullscreenElement);
@@ -105,9 +102,8 @@ function GameScreenContent() {
     const nextQuestion = useCallback(() => {
         if (isGameOver) return;
 
-        setIsNavigating(false); // Reset navigation guard for the new question
+        setIsNavigating(false);
 
-        // Record time for current question
         const timeTaken = (Date.now() - startTime) / 1000;
         setQuestionTimes(prev => [...prev, timeTaken]);
 
@@ -128,7 +124,6 @@ function GameScreenContent() {
         });
     }, [isGameOver, shortcuts.length, difficulty, startTime]);
 
-    // Timer logic
     useEffect(() => {
         if (isGameOver || feedback || isNavigating) return;
 
@@ -150,19 +145,16 @@ function GameScreenContent() {
         return () => clearInterval(timer);
     }, [currentIndex, isGameOver, feedback, nextQuestion, isNavigating]);
 
-    // Keyboard event handler
     useEffect(() => {
         if (!hasStarted) return;
 
         const handleKeyDown = (e: KeyboardEvent) => {
-            // Aggressively prevent default browser behavior for shortcuts
             if (e.ctrlKey || e.altKey || e.metaKey || (e.key.length > 1 && e.key !== 'Escape')) {
                 e.preventDefault();
             }
 
             if (isGameOver || feedback || isNavigating || processingIndexRef.current === currentIndex) return;
 
-            // Don't process Escape for the game if we want it to exit fullscreen
             if (e.key === 'Escape') return;
 
             const key = e.key === " " ? "Space" : e.key;
@@ -173,7 +165,6 @@ function GameScreenContent() {
             newPressed.add(key);
             setPressedKeys(newPressed);
 
-            // Check if all required keys are pressed
             const isCorrect = currentShortcut.keys.every((k: string) =>
                 Array.from(newPressed).some(p => p.toLowerCase() === k.toLowerCase())
             );
@@ -186,7 +177,6 @@ function GameScreenContent() {
                 setCorrectShortcutIds(prev => [...prev, currentShortcut.id]);
                 setTimeout(nextQuestion, 1000);
             } else if (newPressed.size >= currentShortcut.keys.size) {
-                // Check if any pressed key is NOT in the shortcut
                 const hasWrongKey = Array.from(newPressed).some(p =>
                     !currentShortcut.keys.some((k: string) => k.toLowerCase() === p.toLowerCase())
                 );
@@ -209,7 +199,6 @@ function GameScreenContent() {
 
     const accuracy = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
-    // Save game data when game is over
     useEffect(() => {
         if (isGameOver && user?.username) {
             const avgTime = questionTimes.length > 0
@@ -229,10 +218,8 @@ function GameScreenContent() {
             const storageKey = `userStats_${user.username}`;
             const existingStats = JSON.parse(localStorage.getItem(storageKey) || '{"sessions": []}');
 
-            // Add new session
             existingStats.sessions.push(sessionData);
 
-            // Calculate streak
             const dates = existingStats.sessions.map((s: any) => s.date.split('T')[0]);
             const uniqueDates = Array.from(new Set(dates)).sort() as string[];
 
@@ -241,7 +228,6 @@ function GameScreenContent() {
                 const today = new Date().toISOString().split('T')[0];
                 let current = today;
 
-                // If they haven't played today, check yesterday
                 if (!uniqueDates.includes(today)) {
                     const yesterday = new Date();
                     yesterday.setDate(yesterday.getDate() - 1);
@@ -265,7 +251,6 @@ function GameScreenContent() {
 
             existingStats.streak = streak;
 
-            // Update mastered shortcuts uniquely
             if (!existingStats.masteredShortcuts) {
                 existingStats.masteredShortcuts = {};
             }
@@ -273,7 +258,6 @@ function GameScreenContent() {
                 existingStats.masteredShortcuts[tool] = [];
             }
 
-            // Merge unique IDs
             const currentMastered = new Set(existingStats.masteredShortcuts[tool]);
             correctShortcutIds.forEach(id => currentMastered.add(id));
             existingStats.masteredShortcuts[tool] = Array.from(currentMastered);
@@ -291,7 +275,6 @@ function GameScreenContent() {
         router.push('/pages/dashboard');
     };
 
-    // If we've started but have no shortcuts matching the difficulty
     if (hasStarted && shortcuts.length === 0) {
         return (
             <div className="min-h-screen bg-zinc-50 flex flex-col items-center justify-center text-zinc-900 gap-4">
@@ -306,7 +289,6 @@ function GameScreenContent() {
         );
     }
 
-    // Only show loading if we've actually started and are waiting for data
     if (hasStarted && !currentShortcut) {
         return <div className="min-h-screen bg-zinc-50 flex items-center justify-center text-zinc-900">Loading...</div>;
     }
@@ -327,7 +309,6 @@ function GameScreenContent() {
                     feedback={feedback}
                 />
 
-                {/* Main Content */}
                 <div className="w-full max-w-4xl flex flex-col items-center gap-8 md:gap-12 z-10 mt-20 md:mt-0">
                     <div className="text-center space-y-2 md:space-y-4">
                         <h2 className="text-zinc-400 text-sm md:text-lg font-medium tracking-widest uppercase">Action to Perform</h2>
