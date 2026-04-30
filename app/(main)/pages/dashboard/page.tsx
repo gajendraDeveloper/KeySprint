@@ -186,6 +186,7 @@ export default function Dashboard() {
 
                         <div className="w-full lg:w-auto">
                             <CommonButton
+                            title="First choose your tool and Difficulty level to start training"
                                 label="Start Training"
                                 onClick={handleStartTest}
                                 disabled={!selectedTool}

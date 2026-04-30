@@ -6,11 +6,12 @@ type ButtonProps = {
     icon?: React.ReactNode;
     type?: "button" | "submit" | "reset";
     disabled?: boolean;
+    title?: string;
 }
 
-const CommonButton = ({ label, onClick, styleButton, styleLabel, icon, type = "button", disabled = false }: ButtonProps) => {
+const CommonButton = ({ label, onClick, styleButton, title, styleLabel, icon, type = "button", disabled = false }: ButtonProps) => {
     return (
-        <button className={`${styleButton} cursor-pointer`} type={type} onClick={onClick} disabled={disabled}><p className={`${styleLabel}`}>{label}</p>{icon}</button>
+        <button className={`${styleButton} cursor-pointer`} title={title} type={type} onClick={onClick} disabled={disabled}><p className={`${styleLabel}`}>{label}</p>{icon}</button>
     )
 }
 export default CommonButton
